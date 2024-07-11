@@ -1,3 +1,5 @@
+'use client'
+
 import { MenuIcon } from 'lucide-react';
 import Avatar from '@/components/navbar/Avatar';
 import {
