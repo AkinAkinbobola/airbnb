@@ -1,25 +1,13 @@
-'use client';
-
 import { MenuIcon } from 'lucide-react';
 import Avatar from '@/components/navbar/Avatar';
-import { useCallback, useState } from 'react';
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu';
 import MenuItem from '@/components/navbar/MenuItem';
 
 const UserMenu = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleOpen = useCallback(() => {
-    setIsOpen((value) => !value);
-  }, []);
-
   return (
     <div className={'relative'}>
       <div className={'flex items-center gap-3'}>
