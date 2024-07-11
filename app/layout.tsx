@@ -1,18 +1,18 @@
-import type { Metadata } from "next";
-import { Inter, Nunito } from "next/font/google";
-import "./globals.css";
-import Navbar from "@/components/navbar/Navbar";
+import type { Metadata } from 'next';
+import { Inter, Nunito } from 'next/font/google';
+import './globals.css';
+import Navbar from '@/components/navbar/Navbar';
 
-const inter = Inter({ subsets: ["latin"] });
-const nunito = Nunito({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] });
+const nunito = Nunito({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "Airbnb",
-  description: "Airbnb app",
+  title: 'Airbnb',
+  description: 'Airbnb app'
 };
 
 export default function RootLayout({
-  children,
+  children
 }: Readonly<{
   children: React.ReactNode;
 }>) {
